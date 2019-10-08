@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bandeiras do Mundo</title>
+    <style type="text/css">
+    /* Comando para mudar o fundo da página: */
+    /* background-color serve, obviamente, para definir a cor de fundo da tela */
+    /* backgroun-image: url(local da foto) serve para difnir um caminho que contem uma imagem para servir de fundo */
+
+    body {
+        background-color: rgb(0, 0, 0);
+        background-image:url("imagens/mundo.tiff");
+            }
+    /*--------------------------------------*/
+    /* Font-Family é utilizado para definir o tipo de fonte que será utilizado,
+    fontes que tem nome composto (Com espaço), terão que estar entre aspas, e a seguir por virgula
+    colocar fonte alternativas, caso a primeira fonte não tenha no Win */
+    /* font-Size é utilizado para definir o Tamanho da letra (Pode ser colocado somente o número do
+    tamanho, utlizar pt (tamanhoPT) ou utilizar pixels (tamanhoPX)*/
+    /* font-weight seria o "peso" da fonte, por exemplo Bold deixara o texto em negrito */
+    /* Color é utilizado para escolher a cor das letras, obviamente.. */
+    /* p é utlizado para definir que os paragrafos, no body o <p> vai ser onde serão aplicados o style */
+    /* text-align serve para definir como o texto vai ser alinhado, outro obviamente... */
+    /* text-decoration, é autoexplicativo, mas serve para decorar o texto (underline deixa o texto sublinhado 
+    (none para tirar qualquer tipo de decoração); (overline adicionha uma linha acima do texto)
+    (line-through risca o texto no meio)*/
+    /* text-indent ele vai dar uma identação ao texto para não fica colado nas bordas atraves de
+    quantos pixels você definir */
+    p {
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #ffffff ;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-indent: 0px;
+    }
+     /* Para definir somente um paragrafo por exemplo temos que definir uma ID para o paragrafo */
+    /* utilizando o #nomedaID (que foi definido lá no body) você define pro CSS em qual vai ser utilizado os cod. */
+    /* caso for utilizado CLASS="" ao invez de ID="" seria .paragraph */
+    #paragraph {
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: #ffffff ;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+    #alemanha_link {
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color:  #0400ff ;
+        font-weight: bold;
+        text-indent: 50px;
+        text-align: left;
+        text-decoration: none;
+    
+    }
+    #suecia_link {
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color:  #0400ff ;
+        font-weight: bold;
+        text-indent: 50px;
+        text-align: left;
+        text-decoration: none;
+
+    }
+    #argentina_link {
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color:  #0400ff ;
+        font-weight: bold;
+        text-indent: 50px;
+        text-align: left;
+        text-decoration: none;
+
+    }
+    /* para definir a cor que vai aparecer assim que o mouse passar em cima utilizar o hover */
+    #alemanha_link:hover {
+        font-size: 65px;
+        color: #0400ff ;
+        }
+    #suecia_link:hover {
+        font-size: 65px;
+        color: #0400ff ;
+        }
+    #argentina_link:hover {
+        font-size: 65px;
+        color: #0400ff ;
+        }
+    /* Para mudar o estilo do link depois de clicar, utilizar o active por exemplo a:active ou #alemanha_link: active*/
+    /*Para mudar links que já foram visitados, utilizar visited, na mesma regra dos anteriores*/
+    /* EXEMPLO:
+    
+        #alemanha_link:visited {
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #ff0000 ;
+        font-weight: bold;
+        text-indent: 50px;
+        text-align: left;
+        text-decoration: none;
+    }
+    */
+    /*--------------------------------------*/
+    /*divs são códigos HTML que se pode usar com CSS para construção de Layouts */
+    /* Segue a mesma regra de nomeação do paragrafo, utilizando ID ou Class para diferenciar no cod.*/
+    /* o Position existe a opção absolute ou relative */
+    /* Absolute ela ficara na frente de outros elementos da tela */
+    /* Relative ela ficara pocisionada onde colocarmos*/
+    /* Width seria a largura que ela ocupara da tela; height o tamanho/altura que ocupara
+    e o background-color para definir uma cor de fundo mesmo*/
+    /* border-(left,top,bottom,right) seria a borda e a direção da borda */
+    /* border-left numeroPX (seria o tamanho da borda) e a seugir a cor da borda*/
+    .left_div{        /*Inicio bandeira Alemanha*/
+        position: relative;
+        width: 25%;
+        height: 75px;
+        background-color: #000000;
+        border-left: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #fffafa;
+    }
+    .center_div{
+        position: relative;
+        width: 25%;
+        height: 75px;
+        background-color: #ff0000;
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+    }
+    .back_div{
+        position: relative;
+        width: 25%;
+        height: 75px;
+        background-color: #f1e207;
+        border-bottom: 1px solid #fffcfc;
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        
+    }
+    /*Fim Bandeira Alemanha*/
+    .lefta_div{ /*Inicio Bandeira Suecia*/
+        position: relative;
+        width: 25%;
+        height: 225px;
+        background-color: #055594;
+        border-left: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        float: left;
+        left: 500px;
+    }
+    .centera_div{
+        position: absolute;
+        width: 5%;
+        height: 225px;
+        left: 600px;
+        background-color: #FDCB08;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }  
+    .rightera{
+        position: absolute;
+        width: 24.8%;
+        height: 75px;
+        background-color: #FDCB08;
+        left: 509px;
+        border-right: #ffffff;
+    }
+    /*Fim bandeira da Suecia*/
+    .leftb_div{ /*Inicio Bandeira Argentina*/
+        position: absolute;
+        width: 25%;
+        height: 225px;
+        background-color: #76ABDF;
+        border-left: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        float: right;
+        right: 432px;
+    }
+    .righterb{
+        position: absolute;
+        width: 24.9%;
+        height: 75px;
+        background-color: rgb(235, 235, 235);
+        border-left: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        float: right;
+        right: 433px;
+    }
+#sol{
+    position: absolute;
+    float: right;
+    right: 630px;
+}
+/*Fim Bandeira Argentina*/
+.leftc_div{  /*Inicio Bandeira Uruguai*/
+    position: auto;
+        width: 21%;
+        height: 225px;
+        background-color: #ffffff;
+        border-left: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        float: right;
+        right: 25px;
+}
+.centerc_div{
+        position: absolute;
+        float: right;
+        width: 21%;
+        height: 25px;
+        right: 8px;
+        background-color: rgb(5, 39, 231);
+    }
+    .centerc_div2{
+        position: absolute;
+        float: right;
+        width: 14%;
+        height: 25px;
+        right: 8px;
+        background-color: rgb(5, 39, 231);
+    }  
+#solu{
+    position: absolute;
+    float: right;
+    right: 290px;
+}
+/*Fim Bandeira Uruguai*/
+    </style>
+</head>
+<body>
+ <!-- /p é usado para definir um paragrafo.-->
+    <p>Bandeiras do Mundo</p> 
+    <header></header>
+ <!--Aqui eu vou colocar uma ID para o paragrafo para o CSS ser aplicado somente nele-->
+ <p id="paragraph">E suas historias.</p>
+ <hr>
+ <img id="solu" width="125px" height="125px" src="imagens/uruguai.tiff" alt="Argentina">
+ <div class="lefta_div"></div> <!-- Topo da Bandeira da Suecia -->
+
+<div class="leftc_div"></div>
+<div class="centera_div"></div> <!--Meio Vertical  da Suecia-->
+<div class="leftb_div"></div> <!--Azul bandeira Argentina-->
+<div class="left_div"></div>  <!--Topo da Bandeira da Alemanha-->
+<div class="rightera"></div> <!--Meio Horizontal Suecia-->
+<div class="righterb"></div> <!--Meio da Argentina-->
+<div class="centerc_div2"></div>
+<img id="sol" width="75px" height="75px" src="imagens/argentina.png" alt="Argentina">
+<div class="center_div"></div>  <!--Meio da bandeira Alemanha-->
+<div class="centerc_div"></div>
+<div class="back_div"></div> <!--Linha horizontal de baixo da Alemanha-->
+<a href="alemanha.html" id="alemanha_link">Alemanha</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="suecia.html" id="suecia_link">Suecia</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="argentina.html" id="argentina_link">Argentina</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="uruguai.html" id="argentina_link">Uruguai</a>
+
+
+    
+
+</body>
+</html>
